@@ -19,10 +19,11 @@ const products = [
   },
   {
     id: 3,
-    name: "Marbol HLP Original ( 1 Slop )",
+    name: "Angker Mangga ( 1 Slop )",
     price: 102.000,
     image:
-      "
+      "https://ibb.co.com/V0r04YkW",
+  }, 
 ];
 
 const fakeNames = [
