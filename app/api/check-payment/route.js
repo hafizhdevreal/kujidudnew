@@ -10,7 +10,8 @@ export async function POST(req) {
           "Content-Type": "application/json",
         },
         body: JSON.stringify({
-          api_key: process.env.PG_API_KEY,
+          api_key:
+            "RP-dc5b4514-bc01-4217-9d07-e6f8e14db398",
           reff_id: body.reff_id,
         }),
       }
@@ -19,10 +20,10 @@ export async function POST(req) {
     const data = await response.json();
 
     return Response.json(data);
-  } catch (error) {
+  } catch (err) {
     return Response.json({
       status: false,
-      message: "Server Error",
+      message: "Gagal cek pembayaran",
     });
   }
 }
